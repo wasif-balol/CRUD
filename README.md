@@ -1,5 +1,5 @@
 # CRUD
-<h3>CRUD is python and django based practice application performing four basic(create, retreive, updata and delete) databse operations, used jinja templating on frontrnd and django on backend, implemented class based views for different operations and list ClassView for reteiving data</h3>
+<h3>CRUD is python and django based practice application performing four basic(create, retreive, updata and delete) database operations, used jinja templating on frontend and django on backend, implemented class based views for different operations and list ClassView for reteiving data</h3>
 
 
 # Get Started
