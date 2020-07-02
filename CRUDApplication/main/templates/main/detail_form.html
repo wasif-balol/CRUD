@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+{% extends 'mainApp/base.html' %}
+
+{% block body_block %}
+<div class="jumbotron container">
+<h1>Welcome to the Users detail page</h1>
+    <h3>User Details</h3>
+    <p>Name : {{user_details.name}}</p>
+    <p>Age: {{user_details.age}}</p>
+    <p>Email: {{user_details.email}}</p>
+    <p>Gender: {{user_details.gender}}</p>
+    <p><a class="btn btn-warning" href="{% url 'main:update' pk=user_details.pk %}">Update this</a></p>
+     <p><a class="btn btn-danger" href="{% url 'main:delete' pk=user_details.pk %}">Delete this</a></p>
+    </div>
+{% endblock %}

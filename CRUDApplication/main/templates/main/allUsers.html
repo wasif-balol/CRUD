@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users</title>
+</head>
+</html>
+
+{% extends 'mainApp/base.html' %}
+{% block body_block %}
+<div class="jumbotron container">
+<h1>Welcome to a list of all the Users</h1>
+<ol>
+    {% if users %}
+    {% for user in users %}
+    <h3><li><a href="{{user.id}}">{{user.name}}</a></li></h3>
+    {% endfor %}
+    {% else %}
+    <h3>No Users to show!</h3>
+    {% endif %}
+</ol>
+</div>
+
+{% endblock %}
