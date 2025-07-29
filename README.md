@@ -1,21 +1,46 @@
-# CRUD
-<h3>CRUD is python and django based practice application performing four basic(create, retreive, updata and delete) database operations, used jinja templating on frontend and django on backend, implemented class based views for different operations and list ClassView for reteiving data</h3>
+# 🛠️ CRUD – Django Practice App
 
+> A Python and Django-based practice application to demonstrate the four fundamental database operations:  
+> **Create**, **Retrieve**, **Update**, and **Delete** using class-based views and Jinja templating.
 
-# Get Started
-<ul>
-  <li>Requires Python, Django</li>
-  <li>Python:3.5|3.6|3.7|3.8</li>
-  <li>A Python virtual env is recommended. See shortcut.</li>
-</ul>
+---
 
-# Install Requirements in a virtual environment:
+## 🚀 Features
 
-<p>
-git clone https://github.com/wasif-balol/CRUD.git<br>
-cd CRUDApplication<br>
-pip install -r requirements.txt<br>
-  python manage.py runserver
-  
-</p>
+- 🔁 Fully functional CRUD operations
+- 🧱 Built with **Django** backend and **Jinja templates** on the frontend
+- 🧩 Uses **Class-Based Views (CBVs)** for clean separation of logic
+- 📋 Implements Django’s `ListView` for efficient data retrieval
+- 📝 Simple and clean user interface to interact with database records
 
+---
+
+## 🧰 Requirements
+
+- Python: `3.5` – `3.8`
+- Django (version specified in `requirements.txt`)
+- Recommended: Use a **Python virtual environment**
+
+---
+
+## 💻 Setup Instructions
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/wasif-balol/CRUD.git
+
+# 2. Navigate to the project directory
+cd CRUDApplication
+
+# 3. Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate       # 📌 On Windows: venv\Scripts\activate
+
+# 4. Install project dependencies
+pip install -r requirements.txt
+
+# 5. Apply database migrations
+python manage.py migrate
+
+# 6. Run the development server
+python manage.py runserver
